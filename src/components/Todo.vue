@@ -19,7 +19,7 @@
         <h2>List</h2>
         <ul class="list-group">
           <li v-for="(todo, index) in todos" :key="index" class="list-group-item">
-            {{ index }}: {{ todo }}
+            {{ index }}: {{ todo }} <i class="fa fa-close" @click="remove(index)"></i>
           </li>
         </ul>
       </div>
@@ -40,6 +40,9 @@ export default {
     add () {
       this.todos.push(this.input)
       this.input = ''
+    },
+    remove (index) {
+      this.todos.splice(index, 1)
     }
   }
 }

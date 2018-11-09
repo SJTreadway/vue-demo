@@ -9,7 +9,7 @@
               <label for="todoitem">Todo Item</label>
               <input type="text" v-model="input" class="form-control" id="todoitem" placeholder="Todo Item" />
             </div>
-            <button type="button" @click="add()" class="btn btn-default">Create</button>
+            <button type="submit" @click="add()" class="btn btn-default">Create</button>
           </form>
         </div>
       </div>

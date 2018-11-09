@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import FirstRoute from '@/components/FirstRoute'
 import FirstRouteChild from '@/components/FirstRouteChild'
+import Todo from '@/components/Todo'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
           component: FirstRouteChild
         }
       ]
+    },
+    {
+      path: '/todo',
+      name: 'Todo',
+      component: Todo
     }
   ]
 })

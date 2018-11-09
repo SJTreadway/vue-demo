@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import FirstRoute from '@/components/FirstRoute'
 import FirstRouteChild from '@/components/FirstRouteChild'
 import Todo from '@/components/Todo'
+import Crypto from '@/components/Crypto'
 
 Vue.use(Router)
 
@@ -29,6 +30,11 @@ export default new Router({
       path: '/todo',
       name: 'Todo',
       component: Todo
+    },
+    {
+      path: '/crypto',
+      name: 'Crypto',
+      component: Crypto
     }
   ]
 })

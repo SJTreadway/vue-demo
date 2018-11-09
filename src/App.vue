@@ -7,6 +7,7 @@
         <li><router-link to="/firstroute/Steven">FirstRoute</router-link></li>
         <li><router-link to="/firstroute/Steven/child">FirstRouteChild</router-link></li>
         <li><router-link to="/todo">Todo-List</router-link></li>
+        <li><router-link to="/crypto">Crypto</router-link></li>
       </ul>
     </div>
     <router-view/>

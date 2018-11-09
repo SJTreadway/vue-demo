@@ -1,17 +1,16 @@
 <template>
   <div>
     <h1>{{ msg }}</h1>
-    Hello, {{ $route.params.name }}
-    <router-view></router-view>
+    ( hello from firstroutechild component! )
   </div>
 </template>
 
 <script>
 export default {
-  name: 'firstroute',
+  name: 'firstroutechild',
   data () {
     return {
-      msg: 'FirstRoute'
+      msg: 'FirstRouteChild'
     }
   }
 }

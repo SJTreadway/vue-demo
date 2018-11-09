@@ -12,20 +12,22 @@
       <table class="table table-hover">
         <thead>
           <tr>
-            <td>Rank</td>
-            <td>Name</td>
-            <td>Symbol</td>
-            <td>Price (USD)</td>
-            <td>1H</td>
-            <td>1D</td>
-            <td>1W</td>
-            <td>Market Cap (USD)</td>
+            <td class="bold">Rank</td>
+            <td class="bold">Icon</td>
+            <td class="bold">Name</td>
+            <td class="bold">Symbol</td>
+            <td class="bold">Price (USD)</td>
+            <td class="bold">1H</td>
+            <td class="bold">1D</td>
+            <td class="bold">1W</td>
+            <td class="bold">Market Cap (USD)</td>
           </tr>
         </thead>
         <tbody>
           <tr v-for="coin in coins" :key="coin.id">
             <td>{{ coin.rank }}</td>
-            <td><img :src="getCoinImage(coin.symbol)" alt="">{{ coin.name }}</td>
+            <td><img :src="getCoinImage(coin.symbol)" alt=""></td>
+            <td>{{ coin.name }}</td>
             <td>{{ coin.symbol }}</td>
             <td>{{ coin.price_usd | currency }}</td>
             <td :style="getColor(coin.percent_change_1h)">
@@ -145,5 +147,9 @@ td img {
 .jumbotron {
   margin-top: 5em;
   margin-bottom: 5em;
+}
+
+.bold {
+  font-weight: bold
 }
 </style>
